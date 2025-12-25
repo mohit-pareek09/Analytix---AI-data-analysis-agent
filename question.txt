@@ -1,0 +1,70 @@
+✅ ⚡ BASIC TESTS (should work immediately)
+
+These test local shortcuts (no LLM call):
+
+What columns are present in this dataset?
+
+How many rows are in this dataset?
+
+Tell me the no of columns
+
+📊 ⚡ HISTOGRAM TOOL TESTS
+
+These test plot_histogram (hist_age.png, etc.)
+
+Plot a histogram of age
+
+Plot a histogram of weight with 15 bins
+
+Visualize the height distribution
+
+Create a histogram of score
+
+🧹 ⚡ CLEANING TOOL TESTS
+
+These test clean_feature:
+
+Clean the column weight
+
+Remove missing values from height
+
+Fix all NaN values in the score column
+
+Clean the age feature
+
+📈 ⚡ CORRELATION TOOL TESTS
+
+These test calculate_correlation:
+
+Calculate the correlation between age and score
+
+Find the correlation between weight and height
+
+Is there any relation between height and score?
+
+Calculate the correlation between weight and age
+
+🧠 ⚡ SMART QUESTIONS (LLM must choose correct tool)
+
+These force the model to think and pick a tool:
+
+Which feature is most closely related to age?
+
+Show me something interesting from this dataset using any tool.
+
+Is there a strong relationship between two variables here?
+
+Visualize whatever feature you think is informative.
+
+🧨 ⚡ ERROR / EDGE CASE TESTS
+
+These help verify error-handling logic:
+
+Plot a histogram of abcdef
+
+
+(should return "Column not found")
+
+Clean the column hello
+
+Calculate the correlation between height and abc
